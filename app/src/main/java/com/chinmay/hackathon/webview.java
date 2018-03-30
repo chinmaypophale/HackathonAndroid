@@ -20,11 +20,12 @@ public class webview extends AppCompatActivity {
         if (getIntent() != null) {
             final WebView webview1;
 
-            String info = getIntent().getStringExtra("url");
+           String info = getIntent().getStringExtra("url");
             webview1 = (WebView) findViewById(R.id.webview);
             webview1.getSettings().setJavaScriptEnabled(true);
             webview1.loadUrl(info);
-          //  finishAndRemoveTask();
+      //  webview1.loadUrl("https://google.com");
+        //    finishAndRemoveTask();
 
         }
 

@@ -33,7 +33,8 @@ public class Home extends AppCompatActivity {
 
     }
 
-    public void goGoogle( ) {
+
+    public void goGoogle(View view ) {
         Log.i("Check ","In loop");
         Intent intent = new Intent(this, webview.class);
         intent.putExtra("url", "https://google.com");
@@ -41,11 +42,11 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goFlipkart() {
+    public void goFlipkart(View view) {
         Intent intent = new Intent(this, webview.class);
-        intent.putExtra("url", "https://flipkart.com");
+        intent.putExtra("url", "http://192.168.137.1:8000/Investor");
 
-        this.startActivity(intent);
+        startActivity(intent);
     }
 
 
